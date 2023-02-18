@@ -1,0 +1,137 @@
+/*
+On peut importer des framgements CSS et/ou nos librairies externes
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css");
+
+*/
+@import "reset.css";
+/* https://developer.mozilla.org/fr/docs/Web/CSS/@import */
+
+body {
+  background: #eee;
+  font-family: 'Roboto Slab', serif;
+  color: #212121;
+  font-size: 16px;
+  font-weight: normal;
+}
+nav h1 {
+  margin: 0;
+}
+div.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+div.flex-container-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* navigation */
+nav a {
+  color: crimson;
+  font-weight: bold;
+  padding: 10px;
+  text-decoration: none;
+}
+nav a:hover {
+  color: orangered;
+}
+header img {
+  width: 100%;
+}
+div.flex-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+main section h2.title {
+  color: crimson;
+  font-size: 1.5em;
+  border-bottom: 4px solid orangered;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  padding-left: 20px;
+}
+main section h2.title span {
+  color: orangered;
+}
+/* CARDS */
+div.card {
+  width: 22%;
+  text-align: center;
+  background: #fff;
+  border: 1px solid rgb(186, 186, 186);
+  padding: 10px;
+  transition-duration: 0.5s;
+}
+div.card img {
+  width: 100%;
+}
+div.card h3 {
+  font-size: 1.7em;
+  color: crimson;
+  border-bottom: 2px solid crimson;
+  font-weight: normal;
+  /*
+  border-bottom-width: 1px;
+  border-style: solid;
+  border-color: crimson;
+  */
+}
+div.card p {
+  line-height: 2em;
+}
+
+.w50 {
+  width: 49%;
+}
+section iframe {
+  width: 100%
+}
+section i {
+  font-size: 100px;
+  color: orangered;
+  /* margin-left: 10px;
+  margin-right: 10px; */
+  margin: 0 50px;
+  transition-duration: 1s;
+}
+section i:hover {
+  color: crimson;
+  transform: scale(1.2);
+  cursor:pointer;
+}
+footer {
+  text-align: center;
+  background: rgb(84,27,84);
+  padding: 50px 0;
+  color: #fff;
+}
+footer li {
+  display: inline;
+  list-style: none;
+  margin: 0 5px;
+}
+footer li a {
+  color: #fff
+}
+
+@media screen and (min-width:768px) and (max-width: 1024px) {
+  div.container {
+    width:100%;
+  }
+
+  div.card{
+    width: 47%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  div.container {
+    width:100%;
+  }
+
+  div.card{
+    width: 100%;
+  }
+}
+
